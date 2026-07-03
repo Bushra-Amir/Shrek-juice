@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Tips & Feedback</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons (Only used for stars rating) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- External Custom CSS Link -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <img class="logo" src="material/shrek-juice.jpg" alt="Logo_juice">
+            <a class="navbar-brand" href="index.html"> Shrek-Juices</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase small">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="fruit-categ.html">Fruit juices</a></li>
+                            <li><a class="dropdown-item" href="vege-categ.html">Vegetable juices</a></li>
+                            <li><a class="dropdown-item" href="smoothie-categ.html">Smoothies</a></li>
+                            <li><a class="dropdown-item" href="protein-categ.html">Protein Shakes</a></li>
+                            <li><a class="dropdown-item" href="winter.html">Winter Menu</a></li>
+                            <li><a class="dropdown-item" href="chocolate-categ.html">Chocolate juices</a></li>
+                            <li><a class="dropdown-item" href="mocktails-categ.html">Mocktails</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Connecting directly to the Location section below -->
+                        <a class="nav-link" href="index.html#Store-Location">Store Location</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catering-franchising.html">Franchising</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="catering-franchising.html">Catering</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html">Feedback</a>
+                    </li>
+                    <li class="nav-item">
+                        <!-- Connecting directly to About Us page -->
+                        <a class="nav-link" href="About-us.html">About us</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="juice-page-wrapper">
+        <div class="container">
+            
+            <!-- Simple Header Section -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold display-4">Healthy Tips & Feedback</h1>
+                <div style="width: 80px; height: 4px; background-color: var(--neon); margin: 15px auto 0 auto; border-radius: 2px;"></div>
+            </div>
+
+            <!-- Simple Tips Section Header -->
+            <h2 class="fw-bold mb-4 text-center text-md-start">
+                Healthy Tips
+            </h2>
+            
+            <div class="row g-4 mb-5">
+                <!-- Tip 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 tip-card p-4">
+                        <h5 class="fw-bold text-neon mb-3">The Perfect Timing</h5>
+                        <p class="mb-0">Always consume juice on an empty stomach in the morning or 30 minutes before your meal. This allows your body to absorb vitamins and vital nutrients rapidly.</p>
+                    </div>
+                </div>
+                <!-- Tip 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 tip-card p-4">
+                        <h5 class="fw-bold text-neon mb-3">Drink It Fresh</h5>
+                        <p class="mb-0">Drink your juice within 15 to 20 minutes of extraction. Keeping it stored for a long time destroys essential live enzymes and organic minerals.</p>
+                    </div>
+                </div>
+                <!-- Tip 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 tip-card p-4">
+                        <h5 class="fw-bold text-neon mb-3">Sip It Slowly</h5>
+                        <p class="mb-0">Do not gulp down your juice quickly. Sip it slowly to mix it thoroughly with your natural saliva, which significantly aids and boosts your digestion process.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feedback Form Section -->
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="feedback-section">
+                        <h3 class="fw-bold mb-4 text-center">
+                            Feedback
+                        </h3>
+                        
+                        <form action="#" method="POST">
+                            <div class="row g-3">
+                                <!-- Name Input -->
+                                <div class="col-md-6">
+                                    <label for="userName" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="userName" placeholder="Enter your full name" required>
+                                </div>
+                                
+                                <!-- Email Input -->
+                                <div class="col-md-6">
+                                    <label for="userEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="userEmail" placeholder="name@example.com" required>
+                                </div>
+
+                                <!-- Favorite Juice Dropdown -->
+                                <div class="col-md-6">
+                                    <label for="favJuice" class="form-label">Your Favorite Juice</label>
+                                    <select class="form-select" id="favJuice">
+                                        <option selected disabled>Select your favorite drink...</option>
+                                        <option value="green">Shrek Special Green Juice</option>
+                                        <option value="purple">Dark Purple Detox</option>
+                                        <option value="lavender">Lavender Mint Mocktail</option>
+                                        <option value="other">Other Healthy Sips</option>
+                                    </select>
+                                </div>
+
+                                <!-- Star Rating System -->
+                                <div class="col-md-6">
+                                    <label class="form-label d-block">Rate Our Product Quality</label>
+                                    <div class="rating-wrapper">
+                                        <input type="radio" id="star5" name="rating" value="5"><label for="star5" class="fa-solid fa-star"></label>
+                                        <input type="radio" id="star4" name="rating" value="4"><label for="star4" class="fa-solid fa-star"></label>
+                                        <input type="radio" id="star3" name="rating" value="3"><label for="star3" class="fa-solid fa-star"></label>
+                                        <input type="radio" id="star2" name="rating" value="2"><label for="star2" class="fa-solid fa-star"></label>
+                                        <input type="radio" id="star1" name="rating" value="1"><label for="star1" class="fa-solid fa-star"></label>
+                                    </div>
+                                </div>
+
+                                <!-- Message Textarea -->
+                                <div class="col-12">
+                                    <label for="userMessage" class="form-label">Your Message or Suggestions</label>
+                                    <textarea class="form-control" id="userMessage" rows="4" placeholder="Write your detailed feedback here..." required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-custom w-50 fw-bold rounded-pill">Submit Feedback</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+      <!-- footer -->
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>
+                    <img src="material/shrek-juice.jpg" alt="logo" class="logo">
+                    About Us</h3>
+                <p>
+                    Shrek Juice brings you 100% fresh & healthy juices,
+                    smoothies, and shakes. Our mission is to keep you refreshed naturally.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="catering-franchising.html">Catering</a></li>
+                    <li><a href="index.html#Store-Location">Store Location</a></li>
+                    <li><a href="catering-franchising.html">Franchising</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Aptech North Karachi, Pakistan</p>
+                <p><i class="fas fa-phone"></i> +92 300 1234567</p>
+                <p><i class="fas fa-envelope"></i> hello@shrekjuice.com</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom"> &copy; 2026 JUICE. All rights reserved.</div>
+    </footer>
+
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

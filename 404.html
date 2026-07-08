@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <style>
+        :root {
+            --dark-purple: #1a052f;
+            --purple: #4b178c;
+            --lavender: #d7b3ff;
+            --light-lavender: #f3e8ff;
+            --neon: #c77dff;
+            --mid-purple: #3D1475;
+            --dark-purple-main: #1a0933;
+            --dark-purple-card: #360636;
+            --lavender-main: #e6e6fa;
+            --lavender-muted: #c3bedb;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--dark-purple);
+            color: var(--light-lavender);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Subtle background glow elements */
+        body::before, body::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: var(--purple);
+            filter: blur(120px);
+            opacity: 0.3;
+            z-index: 0;
+        }
+
+        body::before { top: 10%; left: 10%; }
+        body::after { bottom: 10%; right: 10%; }
+
+        .container {
+            text-align: center;
+            z-index: 1;
+            padding: 2rem;
+            max-width: 500px;
+            background: rgba(26, 9, 51, 0.6);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(199, 125, 255, 0.1);
+            border-radius: 16px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            line-height: 1;
+            color: var(--neon);
+            text-shadow: 0 0 20px rgba(197, 125, 255, 0.5);
+            margin-bottom: 1rem;
+            animation: pulse 3s infinite alternate;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            color: var(--lavender-main);
+            margin-bottom: 1rem;
+        }
+
+        p {
+            color: var(--lavender-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .home-btn {
+            display: inline-block;
+            background: var(--purple);
+            color: var(--light-lavender);
+            text-decoration: none;
+            padding: 0.8rem 2rem;
+            font-weight: 600;
+            border-radius: 30px;
+            border: 1px solid var(--neon);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(75, 23, 140, 0.4);
+        }
+
+        .home-btn:hover {
+            background: var(--neon);
+            color: var(--dark-purple);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(199, 125, 255, 0.6);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); text-shadow: 0 0 20px rgba(197, 125, 255, 0.5); }
+            100% { transform: scale(1.03); text-shadow: 0 0 30px rgba(197, 125, 255, 0.8); }
+        }
+
+        @media (max-width: 480px) {
+            .error-code { font-size: 6rem; }
+            h1 { font-size: 1.5rem; }
+            .container { width: 90%; padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="error-code">404</div>
+        <h1>Lost in the Shadows?</h1>
+        <p>The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+        <a href="/" class="home-btn">Return Home</a>
+    </div>
+
+</body>
+</html>
